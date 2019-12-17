@@ -1,0 +1,101 @@
+body {
+	background-color: black;
+	color: #202325;
+}
+
+.panel-body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	border-top-width: 0px;
+	padding-left: 40px;
+}
+
+.panel-title, h2 {
+	font-family: 'Patua One';
+	color: #ffffff;
+	font-size: 1.6em;
+}
+
+.panel-heading {
+	background-color: #544951;
+
+}
+
+.panel-default {
+	border: 0px solid #00000073;
+	border-collapse: collapse;
+}
+
+/* Alt border color: #52ababCC */
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #544951;
+    border: 0px solid #00000073;
+}
+
+.panel-collapse {
+	background-color: #c3ddf7;
+	border-top-width: 0px;
+}
+
+.glyphicon {
+	color: #0e1215d6;
+}
+
+#skill-list {
+	list-style-position: inside;
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size: 1.1em;
+}
+
+.contact-page-content {
+	background-image: url("mountain_landscape.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+}
+
+.contact-block {
+	width: 60%;
+	background-color: #ffffffcc;
+	display: block;
+	margin: 30px auto auto auto;
+	padding: 30px 15px 30px 15px;
+	border-radius: 5px;
+
+}
+.contact-block h1 {
+	color: #597398;
+	font-size: 3em;
+	font-family: 'Patua One';
+}
+.contact-block p {
+	color: #2d272b;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+img {
+	color: black;
+}
+
+.social {
+	color: #eadde7a1;
+	font-size: 200%
+}
+
+.social:hover {
+	color: #E6E6E6;
+}
+
+a {
+	color: #496b88;
+	text-decoration: underline;
+}
+
+p {
+	font-size: 1.1em;
+}
