@@ -4,127 +4,159 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Olha's Portfolio</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Patua+One&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 
-    <!-- Custom styles for this template go here -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-    <div class="container-fluid contact-page-content">
-
-        <div class="contact-block text-center">
-          <div>
-            <h1>Olha Halat</h1>
-            <p>I'm Olha, and I'm reshaping myself professionally. This is my portfolio and a new playground for building HTML/CSS skills. Let's see where this journey will take me.</p>
-          </div>  
-        </div>
-
-    </div><!-- End of CONTACT tab -->
+    <div class="container-fluid intro-content">
+      <div class="intro-block text-center">
+        <div>
+          <h1>Olha Halat</h1>
+          <p>I'm Olha, and I'm reshaping myself professionally. This is my portfolio and a new playground for building HTML/CSS skills. Let's see where this journey will take me.</p>
+        </div>  
+      </div>
+    </div>
 
     <div class="panel-group" id="accordion">
-     <div class="panel panel-default">
-       <div class="panel-heading">
-         <h4 class="panel-title">
-           <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>A few words about me</a>
-         </h4>
-       </div>
-       <div id="collapseOne" class="panel-collapse collapse in">
-         <div class="panel-body">
-          <p>Languages, technology, media, art, nature... It's all about information and the ways in which it's being generated, perceived, exchanged, processed. And all that has always fascinated me.</p>
 
-          <p>I am a social studies graduate who writes and communicates. I am all into languages and communication. And my love for the world of IT and technology drives me to start learning to code and program.</p>
+     <div class="panel panel-default">       
+       
+      <div class="panel-heading" id="heading-one">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>A few words about me</a>
+        </h4>
+      </div>      
+       
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body container">
+         <div class="row">
+           <div class="col-sm-4 bio-text">
+            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+            <p>Languages, technology, media, art, nature... It's all about information and the ways in which it's being generated, perceived, exchanged, processed. And all that has always fascinated me.</p>
+          </div>
+          <div class="col-sm-4 bio-text">
+            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+            <p>As a social studies graduate who writes, I am all into languages and communication. This and my love for the world of IT and technology drives me to start learning to code and program.</p>
+          </div>
+          <div class="col-sm-4 bio-text">
+            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+            <p>Also, as someone who cannot imagine my life without traveling, I'm always looking forward to exploring new areas and sharing it with others.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      
+    </div> <!-- end of panel one: "A few words..." -->
 
-          <p>Also, I cannot imagine my life without traveling. I'm always looking forward to exploring new areas and sharing what I've learned with others.</p>
-         </div>
-       </div>
-     </div>
-     <div class="panel panel-default">
-       <div class="panel-heading">
-         <h4 class="panel-title">
-           <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</a>
-         </h4>
-       </div>
-       <div id="collapseTwo" class="panel-collapse collapse">
-         <div class="panel-body">
-          <ul id="skill-list">
-            <li>Writing</li>
-            <li>Translation: EN, UA, RU</li>
-            <li>Digital Marketing: content, analytics, social media, email, SEO</li>
-            <li>Adobe InDesign</li>
-            <li>Web Design & Development: HTML, CSS</li>
-          </ul>
-         </div>
-       </div>
-     </div>
-     <div class="panel panel-default">
-       <div class="panel-heading">
-         <h4 class="panel-title">
-           <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</a>
-         </h4>
-       </div>
-       <div id="collapseThree" class="panel-collapse collapse">
-         <div class="panel-body">
-          
+    <div class="panel panel-default">
+      <div class="panel-heading" id="heading-two">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+         <ul id="skill-list">
+           <li>Writing</li>
+           <li>Translation: EN, UA, RU</li>
+           <li>Marketing: content, analytics, social media, email, SEO</li>
+           <li>Graphic: Adobe InDesign</li>
+           <li>Web: HTML, CSS</li>
+         </ul>
+        </div>
+      </div>
+    </div> <!-- end of panel one: "My skills" -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading" id="heading-three">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion"href="#collapseThree"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+
           <h2>Recent</h2>
-
-          <p>(2019) <i>Berlin’s Tech Communities</i>: an interactive article/guide &#8212; <a href="https://caissa-global.github.io/berlin-tech-communities/">GitHub link</a> </p>
-
-          <p>(2019) <i>Moving to Berlin: Key Facts & Figures</i>, a concise guide &#8212; <a href="http://bit.ly/BerlinRelocationGuide">PDF link</a></p>
-
-          <p>(2019) <i>Recruitment Journeys from Berlin Tech</i>, a 2019 survey report &#8212; <a href="http://bit.ly/RecruitmentJourneys2019">PDF link</a></p>
-
-          <p>(2018) <i>Recruitment Journeys from Berlin Tech</i>, a 2018 survey report &#8212; <a href="http://bit.ly/CaissaSurveyReport2018">PDF link</a></p>
-
-          <p>(2018) <i>What Does a Perfect CV Look Like? or The goes and no-goes of CV writing for engineers and developers</i> &#8212; <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02">Medium link</a></p>
-
-          <p>(2018) <i>The Myth of a “Rockstar Developer”</i> &#8212; <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c">Medium link</a></p>
+          <div class="container writing-samples">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2019)<br>
+                  <i>Berlin’s Tech Communities</i>: an interactive article/guide<br>
+                  &#8212; <a href="https://caissa-global.github.io/berlin-tech-communities/">GitHub link</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2019)<br>
+                  <i>Moving to Berlin: Key Facts & Figures</i>, a concise guide<br>&#8212; <a href="http://bit.ly/BerlinRelocationGuide">PDF link</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2019)<br>
+                  <i>Recruitment Journeys from Berlin Tech</i>, a 2019 survey report<br>
+                  &#8212; <a href="http://bit.ly/RecruitmentJourneys2019">PDF link</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2018)<br>
+                  <i>Recruitment Journeys from Berlin Tech</i>, a 2018 survey report<br>
+                  &#8212; <a href="http://bit.ly/CaissaSurveyReport2018">PDF link</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2018)<br>
+                  <i>What Does a Perfect CV Look Like?</i><br>
+                  &#8212; <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02">Medium link</a></p>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <p>(2018)<br>
+                  <i>The Myth of a “Rockstar Developer”</i><br>
+                  &#8212; <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c">Medium link</a></p>
+              </div>
+            </div> <!--row-->
+          </div> <!--container-->
 
           <h2>Older</h2>
-
-          <p>(2015) <i>The Reality of Offline Bitcoin Payments</i> &#8212; <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213">CEX.io blog</a></p>
-
-          <p>(2015) <i>Wayfarer’s Songs, a script for a musical podcast</i> &#8212; <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/">Podcast link on Mixcloud</a></p>
-
+          <div class="container writing-samples">
+            <div class="row">
+              <div class="col-sm-6">
+                <p>(2015)<br>
+                  <i>The Reality of Offline Bitcoin Payments</i><br>
+                  &#8212; <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213">CEX.io blog</a></p>
+              </div>
+              <div class="col-sm-6">
+                <p>(2015)<br>
+                  <i>Wayfarer’s Songs</i>, a script for Jonny Brick's musical podcast<br>
+                  &#8212; <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/">Podcast link on Mixcloud</a></p>
+              </div>
+            </div><!--row-->
+          </div><!--container-->
 
          </div>
        </div>
-     </div>
+     </div> <!-- end of panel one: "Writing samples" -->
     </div>
 
     <footer class="text-center">
       <ul class="list-inline">
-        <li class="list-inline-item"><a href="https://www.linkedin.com/in/olha-halat/" class="social"> <i class="fab fa-linkedin"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.instagram.com/mushroomsinberlin/" class="social"> <i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/olha-halat/" class="social"> <i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/mushroomsinberlin/" class="social"> <i class="fab fa-instagram"></i></a>
+        </li>
       </ul>
     </footer>
 
-    <!-- ============================= -->
-    <!-- All your JavaScript comes now -->
-    <!-- ============================= -->
     <script src="https://kit.fontawesome.com/555219fb9d.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
-    <!-- Bootstrap core JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- Can place script tags with JavaScript files here -->
 
   </body>
 </html>
