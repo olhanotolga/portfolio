@@ -10,15 +10,17 @@ body {
 	padding-left: 40px;
 }
 
-.panel-title, h2 {
+.panel-title {
 	font-family: 'Patua One';
 	color: #ffffff;
 	font-size: 1.6em;
 }
 
-.panel-heading {
-	background-color: #544951;
-
+h2 {
+	font-family: 'Patua One';
+	color: #597398;
+	font-size: 1.6em;
+	padding-bottom: 0.5em;
 }
 
 .panel-default {
@@ -26,21 +28,27 @@ body {
 	border-collapse: collapse;
 }
 
-/* Alt border color: #52ababCC */
-
 .panel-default>.panel-heading {
     color: #333;
-    background-color: #544951;
     border: 0px solid #00000073;
 }
-
 .panel-collapse {
-	background-color: #c3ddf7;
+	background-color: #c3ddf726;
 	border-top-width: 0px;
 }
 
+#heading-one {
+	background-color: #FFBF4C;
+}
+#heading-two {
+	background-color: #78D7D0;
+}
+#heading-three {
+	background-color: #FF8F8F;
+}
+
 .glyphicon {
-	color: #0e1215d6;
+	color: black;
 }
 
 #skill-list {
@@ -50,43 +58,75 @@ body {
 	font-size: 1.1em;
 }
 
-.contact-page-content {
+.intro-content {
 	background-image: url("mountain_landscape.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-bottom: 30px;
 }
 
-.contact-block {
+.intro-block {
 	width: 60%;
 	background-color: #ffffffcc;
 	display: block;
 	margin: 30px auto auto auto;
 	padding: 30px 15px 30px 15px;
 	border-radius: 5px;
-
 }
-.contact-block h1 {
+.intro-block h1 {
 	color: #597398;
 	font-size: 3em;
 	font-family: 'Patua One';
 }
-.contact-block p {
+.intro-block p {
 	color: #2d272b;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 1.2em;
 }
 
+.writing-samples .col-sm-4{
+    box-sizing: border-box;
+    height: 10em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.writing-samples .col-xs-6{
+    box-sizing: border-box;
+    height: 12em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.writing-samples .col-md-3{
+    box-sizing: border-box;
+    height: 9em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.writing-samples .col-sm-6{
+    box-sizing: border-box;
+    height: 8em;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.writing-samples p {
+	position: absolute;
+    top: 5%;
+}
+.writing-samples .col-sm-4:nth-child(odd), .writing-samples .col-sm-6:nth-child(even) {
+  background: #fdbf4c30;
+}
+.writing-samples .col-sm-4:nth-child(even), .writing-samples .col-sm-6:nth-child(odd) {
+  border: 1px solid #fdbf4c;
+}
 img {
 	color: black;
 }
 
 .social {
-	color: #eadde7a1;
+	color: #f6fafe;
 	font-size: 200%
 }
-
 .social:hover {
 	color: #E6E6E6;
 }
@@ -98,4 +138,7 @@ a {
 
 p {
 	font-size: 1.1em;
+}
+.fa-paragraph {
+	color: #78D7D0;
 }
