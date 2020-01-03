@@ -76,7 +76,7 @@ h2 {
 }
 
 .intro-block {
-	width: 60%;
+	width: 70%;
 	background-color: #ffffffcc;
 	display: block;
 	margin: 30px auto auto auto;
@@ -95,39 +95,36 @@ h2 {
 	font-size: 1.2em;
 }
 
-.writing-samples .col-sm-4{
+.writing-samples {
+	width: 90%;
+}
+
+.few-words {
+	width: 90%;
+}
+
+.writing-samples .col-sm-4, .col-xs-6, .col-md-3, .col-sm-6 {
     box-sizing: border-box;
-    height: 10em;
     vertical-align: middle;
     margin-bottom: 5px;
+    height: 14em;
 }
-.writing-samples .col-xs-6{
-    box-sizing: border-box;
-    height: 12em;
-    vertical-align: middle;
-    margin-bottom: 5px;
-}
-.writing-samples .col-md-3{
-    box-sizing: border-box;
-    height: 9em;
-    vertical-align: middle;
-    margin-bottom: 5px;
-}
-.writing-samples .col-sm-6{
-    box-sizing: border-box;
-    height: 8em;
-    vertical-align: middle;
-    margin-bottom: 5px;
-}
+
+
 .writing-samples p {
-	position: absolute;
-    top: 5%;
+	position: relative;
+    top: 10%;
+    font-size: 1.2em;
+    text-align: center;
 }
-.writing-samples .col-sm-4:nth-child(odd), .writing-samples .col-sm-6:nth-child(even) {
-  background: #fdbf4c30;
-}
-.writing-samples .col-sm-4:nth-child(even), .writing-samples .col-sm-6:nth-child(odd) {
+.writing-samples .col-sm-4:hover, .col-xs-6:hover, .col-md-3:hover, .col-sm-6:hover {
   border: 1px solid #fdbf4c;
+  background-color: white;
+}
+
+.writing-samples a {
+	color: #202325;
+	text-decoration: none;
 }
 img {
 	color: black;
