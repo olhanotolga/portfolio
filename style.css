@@ -107,14 +107,15 @@ h2 {
     box-sizing: border-box;
     vertical-align: middle;
     margin-bottom: 5px;
-    height: 14em;
+    overflow: auto;
+    height: 8em;
 }
 
 
 .writing-samples p {
 	position: relative;
     top: 10%;
-    font-size: 1.2em;
+    font-size: unset;
     text-align: center;
 }
 .writing-samples .col-sm-4:hover, .col-xs-6:hover, .col-md-3:hover, .col-sm-6:hover {
