@@ -111,14 +111,14 @@ h2 {
     height: 8em;
 }
 
-
 .writing-samples p {
 	position: relative;
     top: 10%;
     font-size: unset;
     text-align: center;
 }
-.writing-samples .col-sm-4:hover, .col-xs-6:hover, .col-md-3:hover, .col-sm-6:hover {
+.writing-samples p:hover {
+  padding: 4px;
   border: 1px solid #fdbf4c;
   background-color: white;
 }
