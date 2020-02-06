@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
 	box-sizing: border-box;
 }
@@ -5,7 +7,14 @@ body {
 	background-color: black;
 	color: #202325;
 }
+a {
+	color: #496b88;
+	text-decoration: underline;
+}
 
+p {
+	font-size: 1.1em;
+}
 /* HEADER */
 
 header {
@@ -18,12 +27,12 @@ header {
 	width: 90%;
 	margin: auto;
 	padding: 20px 30px 20px 30px;
-	background-color: #ffffffcc;
+	background-color: #ffffff;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-
+	border: 3px solid #78D7D0;
 }
 #intro-block {
 	max-width: 500px;
@@ -72,28 +81,29 @@ header {
 	}
 }
 
-/* ACCORDION PANEL */
+/* MAIN TEXT & ACCORDION PANEL */
 
+main {
+	width: 90%;
+	margin: auto;
+	padding-top: 20px;
+}
+@media (min-width: 900px) {
+	main	{
+		width: 70%;
+	}
+}
+@media (min-width: 1100px) {
+	main	{
+		width: 60%;
+	}
+}
 .panel-body {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	border-top-width: 0px;
 	padding-left: 40px;
 }
-
-.panel-title {
-	font-family: 'Patua One';
-	color: #ffffff;
-	font-size: 1.6em;
-}
-
-h2 {
-	font-family: 'Patua One';
-	color: #597398;
-	font-size: 1.6em;
-	padding-bottom: 0.5em;
-}
-
 .panel-default {
 	border: 0px solid #00000073;
 	border-collapse: collapse;
@@ -107,27 +117,65 @@ h2 {
 	background-color: #c3ddf726;
 	border-top-width: 0px;
 }
-
-#heading-one {
-	background-color: #FFBF4C;
+.panel-title {
+	font-family: 'Patua One';
+	color: #ffffff;
+	font-size: 1.6em;
 }
-#heading-two {
-	background-color: #78D7D0;
-}
-#heading-three {
-	background-color: #FF8F8F;
+.panel-title:focus, .panel-title:hover {
+	color: #ffffff;
 }
 
+h2 {
+	font-family: 'Patua One';
+	color: #597398;
+	font-size: 1.6em;
+	padding-bottom: 0.5em;
+}
 .glyphicon {
 	color: black;
 }
 
+/* A FEW WORDS ABOUT ME */
+
+#heading-one {
+	background-color: #FFBF4C;
+}
 #few-words {
 	display: flex;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+}
+.bio-text {
+	display: flex;
 	flex-wrap: wrap;
+	max-width: 30%;
+	align-content: flex-start;
+}
+@media (max-width: 800px) {
+	#few-words {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.bio-text {
+		min-width: 95%;
+		flex-wrap: nowrap;
+		/* max-width: 30%; */
+		align-content: space-between;
+	}
+}
+
+.fa-paragraph {
+	color: #78D7D0;
+	margin-right: 20px;
 }
 
 
+/* MY SKILLS */
+
+#heading-two {
+	background-color: #78D7D0;
+}
 #skill-list {
 	list-style-position: inside;
 	margin-left: 0px;
@@ -146,55 +194,70 @@ h2 {
 }
 
 
+/* WRITING SAMPLES */
+
+#heading-three {
+	background-color: #FF8F8F;
+}
+#writing-samples {
+	display: flex;
+	flex-direction: column;
+}
 .writing-samples {
 	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 20px;
+	grid-column-gap: 30px;
+	justify-items: center;
 }
-
-
-.writing-samples .col-sm-4, .col-xs-6, .col-md-3, .col-sm-6 {
-    box-sizing: border-box;
-    vertical-align: middle;
-    margin-bottom: 5px;
-    overflow: auto;
-    height: 8em;
-}
-
 .writing-samples p {
+	padding: 10px;
+}
+@media (max-width: 750px) {
+	.writing-samples {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 400px) {
+	.writing-samples {
+		grid-template-columns: 1fr;
+	}
+	.writing-samples p {
+		text-align: center;
+	}
+}
+@media (min-width: 1400px) {
+	.writing-samples {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+/* .writing-samples p {
 	position: relative;
     top: 10%;
     font-size: unset;
     text-align: center;
-}
+} */
 .writing-samples p:hover {
-  padding: 4px;
-  border: 1px solid #fdbf4c;
+  border-radius: 5px;
   background-color: white;
 }
-
 .writing-samples a {
 	color: #202325;
 	text-decoration: none;
 }
-img {
-	color: black;
+.writing-samples a:hover {
+	text-decoration: underline #FFBF4C;
 }
+
+
+/* FOOTER */
 
 .social {
 	color: #f6fafe;
 	font-size: 200%
 }
 .social:hover {
-	color: #E6E6E6;
-}
-
-a {
-	color: #496b88;
-	text-decoration: underline;
-}
-
-p {
-	font-size: 1.1em;
-}
-.fa-paragraph {
-	color: #78D7D0;
+	color: #b5b4b4;
 }
