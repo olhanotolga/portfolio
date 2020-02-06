@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The usage of the 3 meta attributes below are marked as errors by the W3 validator:
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" /> -->
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" /> -->
     <meta name="keywords" content="Content Marketing, Writing, Translation, Web Development, Portfolio, Berlin, HTML, CSS, Nature Geek, Learning to program">
     <meta name="author" content="Olha Halat">
     <meta name="description" content="I'm Olha, a marketing writer changing her career path to become a web developer. This is my portfolio and a playground for building my HTML/CSS skills.">
@@ -34,128 +34,135 @@
 
   <body>
 
-    <div class="container-fluid intro-content">
-      <div class="intro-block text-center">
-        <div>
-          <h1>Olha Halat</h1>
-          <p>I'm Olha, and I'm reshaping myself professionally. This is my portfolio and a new playground for building HTML/CSS skills. Let's see where this journey will take me.</p>
-        </div>  
-      </div>
-    </div>
-
-    <div class="panel-group" id="accordion">
-
-     <div class="panel panel-default">       
-       
-      <div class="panel-heading" id="heading-one">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>A few words about me</a>
-        </h4>
-      </div>      
-       
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body container few-words">
-         <div class="row">
-           <div class="col-sm-4 bio-text">
-            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
-            <p>Languages, technology, media, art, nature... It's all about information and the ways in which information is being generated, perceived, exchanged, processed. That's what has always fascinated me.</p>
-          </div>
-          <div class="col-sm-4 bio-text">
-            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
-            <p>As a social studies graduate who writes, I am all into languages and communication. This, along with my love for the world of technology, drives me toward learning to code.</p>
-          </div>
-          <div class="col-sm-4 bio-text">
-            <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
-            <p>What's more, as someone who cannot imagine her life without traveling, I'm always looking forward to exploring new areas and sharing my experience with others.</p>
-          </div>
-         </div>
+    <!-- HEADER "INTRO-CONTENT" -->
+    <header>
+      <div id="intro-content">
+        <img id="profile-img" src="https://raw.githubusercontent.com/olhanotolga/portfolio/master/oh-pic.jpeg">
+        
+        <div id="intro-block">
+            <h1>Olha Halat</h1>
+            <p>I'm Olha, and I'm reshaping myself professionally. This is my portfolio and a new playground for building HTML/CSS skills. Let's see where this journey will take me.</p>
         </div>
-       </div>
+      </div>
+    </header>
+
+    <!-- MAIN / ACCORDION PANEL STARTS -->
+    <main class="panel-group" id="accordion">
       
-    </div> <!-- end of panel one: "A few words..." -->
+      
+      <div class="panel panel-default">       
+        
+        <div class="panel-heading" id="heading-one">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>A few words about me</a>
+          </h4>
+        </div>      
+        
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body" id="few-words">
 
-    <div class="panel panel-default">
-      <div class="panel-heading" id="heading-two">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body">
-         <ul id="skill-list">
-           <li>Writing</li>
-           <li>Translation: EN, UA, RU</li>
-           <li>Marketing: content, analytics, social media, email, SEO</li>
-           <li>Graphics: Adobe InDesign</li>
-           <li>Web: HTML, CSS</li>
-         </ul>
+            <div class="bio-text">
+              <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+              <p>Languages, technology, media, art, nature... It's all about information and the ways in which information is being generated, perceived, exchanged, processed. That's what has always fascinated me.</p>
+            </div>
+            <div class="bio-text">
+              <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+              <p>As a social studies graduate who writes, I am all into languages and communication. This, along with my love for the world of technology, drives me toward learning to code.</p>
+            </div>
+            <div class="bio-text">
+              <p><i class="fa fa-paragraph" aria-hidden="true"></i></p>
+              <p>What's more, as someone who cannot imagine her life without traveling, I'm always looking forward to exploring new areas and sharing my experience with others.</p>
+            </div>
+
+          </div>
         </div>
-      </div>
-    </div> <!-- end of panel one: "My skills" -->
+        
+      </div> <!-- end of panel one: "A few words..." -->
 
-    <div class="panel panel-default">
-      <div class="panel-heading" id="heading-three">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</a>
-        </h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse">
-        <div class="panel-body">
+      <div class="panel panel-default">
+        <div class="panel-heading" id="heading-two">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+          <ul id="skill-list">
+            <li>Writing</li>
+            <li>Translation: EN, UA, RU</li>
+            <li>Marketing: content, analytics, social media, email, SEO</li>
+            <li>Graphics: Adobe InDesign</li>
+            <li>Web: HTML, CSS</li>
+          </ul>
+          </div>
+        </div>
+      </div> <!-- end of panel one: "My skills" -->
 
-          <h2>Recent</h2>
-          <div class="container writing-samples">
-            <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2019)<br>
-                  <a href="https://caissa-global.github.io/berlin-tech-communities/"><i><strong>Berlin’s Tech Communities</strong></i><br>an interactive article/guide on GitHub</a></p>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2019)<br>
-                  <a href="http://bit.ly/BerlinRelocationGuide"><i><strong>Moving to Berlin: Key Facts & Figures</strong></i><br>a concise PDF guide</a></p>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2019)<br>
-                  <a href="http://bit.ly/RecruitmentJourneys2019"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2019 survey report, PDF</a></p>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2018)<br>
-                  <a href="http://bit.ly/CaissaSurveyReport2018"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2018 survey report, PDF</a></p>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2018)<br>
-                  <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02"><i><strong>What Does a Perfect CV Look Like?</strong></i><br>a Medium article</a></p>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <p>(2018)<br>
-                  <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c"><i><strong>The Myth of a “Rockstar Developer”</strong></i><br>a Medium article</a></p>
-              </div>
-            </div> <!--row-->
-          </div> <!--container-->
+      <div class="panel panel-default">
+        <div class="panel-heading" id="heading-three">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
 
-          <h2>Older</h2>
-          <div class="container writing-samples">
-            <div class="row">
-              <div class="col-sm-6">
-                <p>(2015)<br>
-                  <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213"><i><strong>The Reality of Offline Bitcoin Payments</strong></i><br>on CEX.io blog</a></p>
-              </div>
-              <div class="col-sm-6">
-                <p>(2015)<br>
-                  <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/"><i><strong>Wayfarer’s Songs</strong></i><br>a script for Jonny Brick's music podcast on Mixcloud</a></p>
-              </div>
-              <div class="col-sm-6">
-                <p>(2014)<br>
-                  <a href="https://korzh.com/easyquery/docs/end-user-guide"><i><strong>EasyQuery End-user Guide</strong></i><br>documentation for a query builder UI software</a>
-                </p>
-              </div>
-            </div><!--row-->
-          </div><!--container-->
+            <h2>Recent</h2>
+            <div class="container writing-samples">
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2019)<br>
+                    <a href="https://caissa-global.github.io/berlin-tech-communities/"><i><strong>Berlin’s Tech Communities</strong></i><br>an interactive article/guide on GitHub</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2019)<br>
+                    <a href="http://bit.ly/BerlinRelocationGuide"><i><strong>Moving to Berlin: Key Facts & Figures</strong></i><br>a concise PDF guide</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2019)<br>
+                    <a href="http://bit.ly/RecruitmentJourneys2019"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2019 survey report, PDF</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2018)<br>
+                    <a href="http://bit.ly/CaissaSurveyReport2018"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2018 survey report, PDF</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2018)<br>
+                    <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02"><i><strong>What Does a Perfect CV Look Like?</strong></i><br>a Medium article</a></p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <p>(2018)<br>
+                    <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c"><i><strong>The Myth of a “Rockstar Developer”</strong></i><br>a Medium article</a></p>
+                </div>
+              </div> <!--row-->
+            </div> <!--container-->
 
-         </div>
-       </div>
-     </div> <!-- end of panel one: "Writing samples" -->
-    </div>
+            <h2>Older</h2>
+            <div class="container writing-samples">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>(2015)<br>
+                    <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213"><i><strong>The Reality of Offline Bitcoin Payments</strong></i><br>on CEX.io blog</a></p>
+                </div>
+                <div class="col-sm-6">
+                  <p>(2015)<br>
+                    <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/"><i><strong>Wayfarer’s Songs</strong></i><br>a script for Jonny Brick's music podcast on Mixcloud</a></p>
+                </div>
+                <div class="col-sm-6">
+                  <p>(2014)<br>
+                    <a href="https://korzh.com/easyquery/docs/end-user-guide"><i><strong>EasyQuery End-user Guide</strong></i><br>documentation for a query builder UI software</a>
+                  </p>
+                </div>
+              </div><!--row-->
+            </div><!--container-->
 
+          </div>
+        </div>
+      </div> <!-- end of panel one: "Writing samples" -->
+
+    </main>
+
+    <!-- FOOTER STARTS -->
     <footer class="text-center">
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -167,10 +174,11 @@
       </ul>
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/555219fb9d.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+      
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   </body>

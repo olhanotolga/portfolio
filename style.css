@@ -1,7 +1,49 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: black;
 	color: #202325;
 }
+
+/* HEADER */
+
+header {
+	background-image: url("mountain_landscape.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#intro-content {
+	display: flex;
+	justify-content: space-evenly;
+}
+#intro-block {
+	background-color: #ffffffcc;
+	/* margin: 30px auto auto auto; */
+	/* padding: 30px 15px 30px 15px; */
+	/* border-radius: 5px; */
+	flex-grow: 1;
+	flex-basis: 60%;
+}
+#profile-img {
+	max-width: 180px;
+	max-height: 180px;
+	flex-grow: 1;
+	flex-basis: 20%;
+}
+#intro-block h1 {
+	color: #597398;
+	font-size: 3em;
+	font-family: 'Patua One';
+}
+#intro-block p {
+	color: #2d272b;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+/* ACCORDION PANEL */
 
 .panel-body {
 	font-family: 'Nunito', sans-serif;
@@ -51,6 +93,12 @@ h2 {
 	color: black;
 }
 
+#few-words {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 #skill-list {
 	list-style-position: inside;
 	margin-left: 0px;
@@ -68,40 +116,11 @@ h2 {
 	margin-left: 1em;
 }
 
-.intro-content {
-	background-image: url("mountain_landscape.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-bottom: 30px;
-}
-
-.intro-block {
-	width: 70%;
-	background-color: #ffffffcc;
-	display: block;
-	margin: 30px auto auto auto;
-	padding: 30px 15px 30px 15px;
-	border-radius: 5px;
-}
-.intro-block h1 {
-	color: #597398;
-	font-size: 3em;
-	font-family: 'Patua One';
-}
-.intro-block p {
-	color: #2d272b;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 400;
-	font-size: 1.2em;
-}
 
 .writing-samples {
 	width: 90%;
 }
 
-.few-words {
-	width: 90%;
-}
 
 .writing-samples .col-sm-4, .col-xs-6, .col-md-3, .col-sm-6 {
     box-sizing: border-box;
