@@ -165,7 +165,8 @@
           <a href="https://www.instagram.com/mushroomsinberlin/" class="social"> <i class="fab fa-instagram"></i></a>
         </li>
       </ul>
-      <p>created by Olha Halat in Berlin</p>
+      <p>made by Olha Halat<br>
+      Berlin, <span id="year"></span></p>
     </footer>
 
     <!-- SCRIPTS -->
@@ -174,6 +175,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+      let date = new Date();
+      let curYear = date.getFullYear();
+      const displayedYear = document.getElementById("year");
+
+      displayedYear.innerHTML = curYear;
+
+    </script>
 
   </body>
 </html>

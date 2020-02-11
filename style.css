@@ -18,7 +18,7 @@ p {
 /* HEADER */
 
 header {
-	background-image: url("mountain_landscape.jpg");
+	/* background-image: url("mountain_landscape.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 20px 0;
