@@ -4,7 +4,11 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: black;
+	height: 100vh;
+	background-image: url(kronplatz-scape-n-mmm.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(2px);
 	color: #202325;
 }
 a {
@@ -18,9 +22,9 @@ p {
 /* HEADER */
 
 header {
-	background-image: url("mountain_landscape.jpg");
+	/* background-image: url("mountain_landscape.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	padding: 20px 0;
 }
 #intro-content {
