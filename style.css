@@ -138,6 +138,8 @@ main {
     color: #333;
 	padding: 12px 17px 14px 17px;
 	box-shadow: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
 .panel-collapse {
 	background-color: #272727;
