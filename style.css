@@ -5,11 +5,12 @@
 }
 body {
 	height: 100vh;
-	background-image: url(kronplatz-scape-n-mmm.jpg);
+	background: repeating-linear-gradient(45deg, #FFFFFF 0px, #FFFFFF 10px, #2C262B 10px, #2C262B 30px);
+	/* background-image: url(kronplatz-scape-n-mmm.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	backdrop-filter: blur(2px);
-	color: #202325;
+	color: #202325; */
 }
 a {
 	color: #496b88;
@@ -258,6 +259,16 @@ h2 {
 
 /* FOOTER */
 
+#footer-container {
+	background-color: #FFBF4Cbb;
+	width: 30%;
+	margin: auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+#footer-container ul {
+	margin-bottom: 0px;
+}
 .social {
 	color: #f6fafe;
 	font-size: 200%
