@@ -41,12 +41,6 @@ header {
 	padding: 0 20px 15px 30px;
 
 }
-/* #profile-img {
-	width: 150px;
-	height: 150px;
-	border-radius: 4px;
-	border: 3px solid #FF8F8F;
-} */
 #intro-block h1 {
 	color: #99c6ed;
 	font-size: 3em;
@@ -173,7 +167,6 @@ h2 {
 	font-family: 'Patua One';
 	color: #78D7D0;
 	font-size: 1.6em;
-	padding-left: 0.5em;
 }
 .glyphicon {
 	color: black;
@@ -183,28 +176,51 @@ h2 {
 
 /* A FEW WORDS ABOUT ME */
 
-
+.about-img {
+	align-self: center;
+}
+#profile-img {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 5px;
+	border: 3px solid #FFFFFF;
+}
 #few-words {
 	display: flex;
 	justify-content: space-between;
 	/* flex-wrap: wrap; */
 }
+.about-paragraphs {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 20px;
+}
 .bio-text {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 30%;
+	max-width: 40%;
 	align-content: flex-start;
 }
 @media (max-width: 800px) {
 	#few-words {
-		justify-content: space-between;
+		align-content: space-between;
 		flex-direction: column;
 	}
 	.bio-text {
 		min-width: 95%;
 		flex-wrap: nowrap;
-		/* max-width: 30%; */
 		align-content: space-between;
+	}
+	.about-paragraphs {
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		margin-left: 0;
+	}
+	.about-img {
+		margin: 10px auto 20px auto;
+		min-width: 20%;
 	}
 }
 .fa-paragraph {
@@ -224,13 +240,120 @@ h2 {
 }
 
 #skill-list li:before {
-	color: #99c6ed;
+	color: #FF8F8F;
 	content: "\2022";
 	/* font-weight: bold; */
 	display: inline-block;
 	width: 1em;
 	margin-left: 1em;
 }
+
+/* EXPERIENCE */
+#resume {
+	margin-right: 20px;
+}
+#resume > section {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+#resume h2 {
+	color: #99c6ed;
+}
+
+#resume-work {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid white;
+}
+.job {
+	padding-bottom: 10px;
+	margin-top: 10px;
+	border-bottom: 1px dashed white;
+	display: grid;
+	column-gap: 10px;
+	grid-template-rows: 1;
+	grid-template-columns: 1fr 6fr;
+	grid-template-areas:
+		"date title"
+		"date company"
+		"date description";
+}
+.job:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.job-date {
+	grid-area: date;
+}
+.job-title {
+	margin-top: 0px;
+	grid-area: title;
+	color: #FFBF4C;
+}
+.job-company {
+	grid-area: company;
+	font-size: 120%;
+}
+.job-description {
+	grid-area: description;
+}
+#resume-education {
+	border-bottom: 1px solid white;
+}
+.ed-section {
+	border-bottom: 1px dashed white;
+	padding-top: 20px;
+}
+.course {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.course:nth-last-child(1) {
+	border-bottom: none;
+}
+
+#lang-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.lang-level {
+	/* background-color: #FFBF4C; */
+	border: 2px solid #FFBF4C;
+	font-size: 70%;
+	padding: 2px 4px 2px 4px;
+	border-radius: 4px;
+	margin-left: 5px;
+	/* color: #272727; */
+}
+@media (max-width: 700px) {
+	#resume-summary {
+		flex-wrap: wrap;
+	}
+	#resume-summary h2 {
+		padding-bottom: 10px;
+	}
+
+	.job {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"title title"
+			"company date"
+			"description description";
+	}
+	.job-date {
+		justify-self: self-end;
+	}
+	.job-description {
+		text-align: justify;
+	}
+	
+}
+
 
 
 /* WRITING SAMPLES */
