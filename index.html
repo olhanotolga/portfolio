@@ -21,7 +21,7 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/olhanotolga/portfolio/master/oh-pic.jpeg">
 
 
-    <title>Olha's Portfolio</title>
+    <title>Olha Halat: Portfolio</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -61,7 +61,7 @@
         </div>
       </div>
       
-      <!-- <img id="profile-img" src="https://raw.githubusercontent.com/olhanotolga/portfolio/master/oh-pic.jpeg"> -->
+      <!-- <img id="profile-img" src="https://raw.githubusercontent.com/olhanotolga/portfolio/master/oh-pic.jpeg" alt="Olha's profile photo"> -->
         
       <div id="intro-block">
         <h1>Olha Halat</h1>
@@ -74,16 +74,18 @@
     <main class="panel-group" id="accordion">
 
       <!-- A FEW WORDS ABOUT ME -->
-      <section class="panel panel-default">
+      <section class="panel panel-default" id="panel-one">
 
         <div class="panel-heading" id="heading-one">
-          <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>About me</a>
+          <h2 class="mb-0">
+            <button class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-fire">&emsp;</span>About me</button>
+          </h2>
         </div>      
           
-        <div id="collapseOne" class="panel-collapse collapse in">
+        <div id="collapseOne" class="panel-collapse collapse in" aria-labelledby="heading-one">
           <div class="panel-body" id="few-words">
             <div class="about-img">
-              <img id="profile-img" src="oh-pic.jpeg" alt="Olha's profile photo">
+              <img id="profile-img" src="oh-pic.jpeg" alt="photo of Olha with blue hair wearing glasses">
             </div>
             
             <div class="about-paragraphs">
@@ -102,88 +104,90 @@
       </section> <!-- END OF "A FEW WORDS..." -->
 
       <!-- MY SKILLS -->
-      <section class="panel panel-default">
+      <section class="panel panel-default" id="panel-two">
         <div class="panel-heading" id="heading-two">
-          <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</a>
+          <h2 class="mb-0">
+            <button class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-leaf">&emsp;</span>My skills</button>
+          </h2>
         </div>
-        <div id="collapseThree" class="panel-collapse collapse">
+        <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="heading-two">
           <div class="panel-body">
             <ul id="skill-list">
-              <li>Writing: articles, copy, guides, short stories</li>
-              <li>Translation: EN, UA, RU</li>
-              <li>Marketing: content, analytics, social media, email, SEO</li>
-              <li>Graphics: Adobe InDesign</li>
-              <li>Web: HTML, CSS, basic JavaScript</li>
+              <li><span class="skill-category">Writing</span> articles, copy, guides, short stories</li>
+              <li><span class="skill-category">Translation</span> website/app copy, articles, non-fiction, film (subtitling)</li>
+              <li><span class="skill-category">Marketing</span> content, analytics, social media, email, SEO</li>
+              <li><span class="skill-category">Graphics</span> Adobe InDesign</li>
+              <li><span class="skill-category">Web Development</span> HTML, CSS, Bootstrap, JavaScript, jQuery</li>
             </ul>
           </div>
         </div>
       </section> <!-- end of panel one: "My skills" -->
 
       <!-- MY CV -->
-      <section class="panel panel-default">
+      <section class="panel panel-default" id="panel-three">
         <div class="panel-heading" id="heading-three">
-          <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-tent">&emsp;</span>Experience</a>
+          <h2 class="mb-0">
+            <button class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-tent">&emsp;</span>Experience</button>
+          </h2>
         </div>
-        <div id="collapseTwo" class="panel-collapse collapse">
+        <div id="collapseThree" class="panel-collapse collapse" aria-labelledby="heading-three">
           <div class="panel-body">
           
-            <article id="resume">
+            <div id="resume">
 
               <section id="resume-work">
-                <h2>Work experience</h2>
+                <h3>Work experience</h3>
                 <section class="job" id="caissa">
-                  <p class="job-date">Feb&nbsp;2017 – Sep&nbsp;2019</p>
-                  <h3 class="job-title">Content Marketing Specialist</h3>
+                  <p class="job-date">Feb&nbsp;2017&nbsp;– Sep&nbsp;2019</p>
+                  <h4 class="job-title">Content Marketing Specialist</h4>
                   <p class="job-company">Caissa Global, Berlin</p>
-                  <p class="job-description">During my 2.5+ years at Caissa, a technology recruitment company, I was responsible for the company’s online presence. This included:<br>
-                    —Content strategy and content creation across multiple channels (email, social media, blog, print);<br>
-                    —Website administration, collaboration with developers on improvement and fixes of the website within the budget;<br>
-                    —Collaboration with marketing contractors, supervision of their work.
-                  </p>
+                  <ul class="job-description">During my 2.5+ years at Caissa, a technology recruitment company, I was responsible for the company’s online presence. This included:
+                    <li>Content strategy and content creation across multiple channels (email, social media, blog, print);</li>
+                    <li>Website administration, collaboration with developers on improvement and fixes of the website within the budget;</li>
+                    <li>Collaboration with marketing contractors, supervision of their work.</li>
+                  </ul>
                 </section>
                 <section class="job" id="anakan">
-                  <p class="job-date">Nov – Dec&nbsp;2016</p>
-                  <h3 class="job-title">Localization QA</h3>
+                  <p class="job-date">Nov&nbsp;– Dec&nbsp;2016</p>
+                  <h4 class="job-title">Localization QA</h4>
                   <p class="job-company">ANAKAN, Berlin</p>
                   <p class="job-description">In my brief time at ANAKAN (now Lionbridge), I provided the quality of Ukrainian localization for mobile games (both iOS and Android). This included both review of the actual strings and identifying/tracking issues and bug reporting.</p>
                 </section>
                 <section class="job" id="freelance">
-                  <p class="job-date">2011 – Present</p>
-                  <h3 class="job-title">Content Creator, Translator, Marketing Specialist</h3>
+                  <p class="job-date">2011&nbsp;– Present</p>
+                  <h4 class="job-title">Content Creator, Translator, Marketing Specialist</h4>
                   <p class="job-company">Freelance, Kyiv/Berlin</p>
                   <p class="job-description">Have cooperated as a content creator and translator/localization specialist with numerous companies and projects, including: Tandem, zero one 24 (24h EUROPA), NEWOLDSTAMP, Django Stars, Bizzoom Projects, Cubits, App Solutions, Odessa Grain Company, MOLODIST International Film Festival, etc.</p>
                 </section>
                 <section class="job" id="govitall">
-                  <p class="job-date">Jun&nbsp;2015 – Feb&nbsp;2016</p>
-                  <h3 class="job-title">Marketing Copywriter</h3>
+                  <p class="job-date">Jun&nbsp;2015&nbsp;– Feb&nbsp;2016</p>
+                  <h4 class="job-title">Marketing Copywriter</h4>
                   <p class="job-company">Govitall, Kyiv</p>
                   <p class="job-description">At Govitall, my main responsibilities were to create marketing content, ensure its quality, and improve it based on the UI/UX test results. I also briefly mentored a team of content writers.</p>
                 </section>
                 <section class="job" id="wnb">
-                  <p class="job-date">Oct&nbsp;2014 – Apr&nbsp;2015</p>
-                  <h3 class="job-title">Marketing Copywriter</h3>
+                  <p class="job-date">Oct&nbsp;2014&nbsp;– Apr&nbsp;2015</p>
+                  <h4 class="job-title">Marketing Copywriter</h4>
                   <p class="job-company">WNB Solutions (Cex.io), Kyiv</p>
                   <p class="job-description">While working with a cryptocurrency marketplace company, I had a chance to learn about Bitcoin and other crypto both as a currency and technology behind them.<br>
                   I was creating content for various company’s products and distributing it across multiple channels. I also managed the communities on Reddit and Bitcoin forums.</p>
                 </section>
                 <section class="job" id="clonefish">
-                  <p class="job-date">Dec&nbsp;2011 – Aug&nbsp;2014</p>
-                  <h3 class="job-title">Copywriter/Content Manager</h3>
+                  <p class="job-date">Dec&nbsp;2011&nbsp;– Aug&nbsp;2014</p>
+                  <h4 class="job-title">Copywriter/Content Manager</h4>
                   <p class="job-company">CloneFish, Kyiv</p>
                   <p class="job-description">During my time with CloneFish, I participated in a number of projects, from SEO content creation for dating websites to managing a mini social network and a desktop games browser. I also recorded and edited videos for an iOS games-themed YouTube channel (&commat;appyshka).</p>
                 </section>
                 <section class="job" id="globe">
-                  <p class="job-date">Nov&nbsp;2010 – Dec&nbsp;2011</p>
-                  <h3 class="job-title">Sales Assistant</h3>
+                  <p class="job-date">Nov&nbsp;2010&nbsp;– Dec&nbsp;2011</p>
+                  <h4 class="job-title">Sales Assistant</h4>
                   <p class="job-company">Globe Bookstore, Kyiv</p>
                   <p class="job-description">At Globe Bookstore, an English-language literature store, I had a chance to develop my communication skills, improve my spoken English, and read a lot of books (mostly fiction).</p>
-                </section>
-
-                
+                </section>                
               </section>
 
               <section id="resume-education">
-                <h2>Education & courses</h2>
+                <h3>Education & courses</h3>
                 <section class="ed-section" id="ed-uni">
                   <div class="course">
                     <p>2008–2010</p>
@@ -197,7 +201,7 @@
 
                 <section class="ed-section" id="ed-courses">
                   <div class="course">
-                    <p>Jan&nbsp;2020 – present</p>
+                    <p>Jan&nbsp;2020&nbsp;– present</p>
                     <p>FrauenLoop: Intro to Web Development</p>
                   </div>
                   <div class="course">
@@ -205,7 +209,7 @@
                     <p>LinkedIn Learning: Become a Front-End Web Developer</p>
                   </div>
                   <div class="course">
-                    <p>Jan – Feb&nbsp;2020</p>
+                    <p>Jan&nbsp;– Feb&nbsp;2020</p>
                     <p>SoloLearn: HTML, CSS, JS, Bootstrap</p>
                   </div>
                   <div class="course">
@@ -225,7 +229,7 @@
               </section>
 
               <section id="resume-languages">
-                <h2>Languages</h2>
+                <h3>Languages</h3>
                 <div id="lang-list">
                   <p>English <span class="lang-level">fluent</span></p>
                   <p>Ukrainian <span class="lang-level">native</span></p>
@@ -235,7 +239,7 @@
                 
               </section>
 
-            </article>
+            </div>
 
 
           </div>
@@ -243,58 +247,59 @@
       </section> <!-- end of panel one: "My CV" -->      
 
       <!-- WRITING SAMPLES -->
-      <section class="panel panel-default">
+      <section class="panel panel-default" id="panel-four">
 
         <div class="panel-heading" id="heading-four">
-          <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</a>
+          <h2 class="mb-0">
+            <button class="panel-title" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="glyphicon glyphicon-tree-deciduous">&emsp;</span>Writing samples</button>
+          </h2>
         </div>
 
-        <div id="collapseFour" class="panel-collapse collapse">
+        <div id="collapseFour" class="panel-collapse collapse" aria-labelledby="heading-four">
           <div class="panel-body" id="writing-samples">
 
-            <h2 class="writing-samples-h2">Recent</h2>
+            <h3 class="writing-samples-h2">Recent</h3>
             <div class="writing-samples">
-                <!-- ADD STRETCHED-LINK BS CLASS TO EACH SAMPLE ANCHOR (makes parent clickable)???-->
                 <div class="sample">
                   <p>(2019)<br>
-                    <a href="https://caissa-global.github.io/berlin-tech-communities/"><i><strong>Berlin’s Tech Communities</strong></i><br>an interactive article/guide on GitHub</a></p>
-                </div>
-                <div class="sample">
-                  <p>(2019)<br>
-                    <a href="http://bit.ly/BerlinRelocationGuide"><i><strong>Moving to Berlin: Key Facts & Figures</strong></i><br>a concise PDF guide</a></p>
+                    <a href="https://caissa-global.github.io/berlin-tech-communities/" rel="external noreferrer noopener" target="_blank" title="Berlin's Tech Communities guide on GitHub (opens in a new window)"><i><strong>Berlin’s Tech Communities</strong></i><br>an interactive article/guide on GitHub</a></p>
                 </div>
                 <div class="sample">
                   <p>(2019)<br>
-                    <a href="http://bit.ly/RecruitmentJourneys2019"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2019 survey report, PDF</a></p>
+                    <a href="http://bit.ly/BerlinRelocationGuide" rel="external nofollow noreferrer noopener" target="_blank" title="Moving to Berlin PDF guide (opens in a new window)"><i><strong>Moving to Berlin: Key Facts & Figures</strong></i><br>a concise PDF guide</a></p>
+                </div>
+                <div class="sample">
+                  <p>(2019)<br>
+                    <a href="http://bit.ly/RecruitmentJourneys2019" rel="external nofollow noreferrer noopener" target="_blank" title="Recruitment Journeys from Berlin's Tech 2019 — PDF survey report (opens in a new window)"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2019 survey report, PDF</a></p>
                 </div>
                 <div class="sample">
                   <p>(2018)<br>
-                    <a href="http://bit.ly/CaissaSurveyReport2018"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2018 survey report, PDF</a></p>
+                    <a href="http://bit.ly/CaissaSurveyReport2018" rel="external nofollow noreferrer noopener" target="_blank" title="Recruitment Journeys from Berlin's Tech 2018 — PDF survey report (opens in a new window)"><i><strong>Recruitment Journeys from Berlin Tech</strong></i><br>a 2018 survey report, PDF</a></p>
                 </div>
                 <div class="sample">
                   <p>(2018)<br>
-                    <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02"><i><strong>What Does a Perfect CV Look Like?</strong></i><br>a Medium article</a></p>
+                    <a href="https://medium.com/caissa-global/what-does-a-perfect-cv-look-like-1f77fac94f02" rel="external nofollow noreferrer noopener" target="_blank" title="What does a perfect CV look like? — article on Medium (opens in a new window)"><i><strong>What Does a Perfect CV Look Like?</strong></i><br>a Medium article</a></p>
                 </div>
                 <div class="sample">
                   <p>(2018)<br>
-                    <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c"><i><strong>The Myth of a “Rockstar Developer”</strong></i><br>a Medium article</a></p>
+                    <a href="https://medium.com/hackernoon/the-myth-of-a-rockstar-developer-e6564bd51b5c" rel="external nofollow noreferrer noopener" target="_blank" title="The myth of a rockstar developer — article on Medium (opens in a new window)" ><i><strong>The Myth of a “Rockstar Developer”</strong></i><br>a Medium article</a></p>
                 </div>
 
             </div> <!-- END OF "RECENT" BLOCK -->
 
-            <h2 class="writing-samples-h2">Older</h2>
+            <h3 class="writing-samples-h2">Older</h3>
             <div class="writing-samples">
                 <div class="sample">
                   <p>(2015)<br>
-                    <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213"><i><strong>The Reality of Offline Bitcoin Payments</strong></i><br>on CEX.io blog</a></p>
+                    <a href="https://blog.cex.io/bitcoin-talks/reality-offline-bitcoin-payments-13213" rel="external nofollow noreferrer noopener" target="_blank" title="The reality of offline Bitcoin payments — blog article (opens in a new window)"><i><strong>The Reality of Offline Bitcoin Payments</strong></i><br>on CEX.io blog</a></p>
                 </div>
                 <div class="sample">
                   <p>(2015)<br>
-                    <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/"><i><strong>Wayfarer’s Songs</strong></i><br>a script for Jonny Brick's music podcast on Mixcloud</a></p>
+                    <a href="https://www.mixcloud.com/blastocast/wayfarers-songs-by-olha-halat/" rel="external noreferrer noopener" target="_blank" title="RWayfarer's Songs podcast on Mixcloud (opens in a new window)"><i><strong>Wayfarer’s Songs</strong></i><br>a script for Jonny Brick's music podcast on Mixcloud</a></p>
                 </div>
                 <div class="sample">
                   <p>(2014)<br>
-                    <a href="https://korzh.com/easyquery/docs/end-user-guide"><i><strong>EasyQuery End-user Guide</strong></i><br>documentation for a query builder UI software</a>
+                    <a href="https://korzh.com/easyquery/docs/end-user-guide" rel="external noreferrer noopener" target="_blank" title="EasyQuery end-user guide (opens in a new window)"><i><strong>EasyQuery End-user Guide</strong></i><br>documentation for a query builder UI software</a>
                   </p>
                 </div>
             </div> <!--END OF "OLDER" BLOCK-->
@@ -308,13 +313,13 @@
     <!-- FOOTER STARTS -->
     <footer class="text-center">
       <div class="list-inline">
-        <a href="https://www.linkedin.com/in/olha-halat/" class="social"> <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/olha-halat/" class="social" rel="external noreferrer noopener" target="_blank" title="Olha's LinkedIn profile (opens in a new window)"> <i class="fab fa-linkedin" aria-hidden="true"></i></a>
 
-        <a href="https://medium.com/@olha.halat" class="social"> <i class="fab fa-medium" aria-hidden="true"></i></a>
+        <a href="https://medium.com/@olha.halat" class="social" rel="external noreferrer noopener" target="_blank" title="Olha's Medium profile (opens in a new window)"> <i class="fab fa-medium" aria-hidden="true"></i></a>
 
-        <a href="https://codepen.io/olhanotolga" class="social"> <i class="fab fa-codepen" aria-hidden="true"></i></a>
+        <a href="https://codepen.io/olhanotolga" class="social" rel="external noreferrer noopener" target="_blank" title="Olha's CodePen profile (opens in a new window)"> <i class="fab fa-codepen" aria-hidden="true"></i></a>
 
-       <a href="https://github.com/olhanotolga" class="social"><i class="fab fa-github" aria-hidden="true"></i></a>
+       <a href="https://github.com/olhanotolga" class="social" rel="external noreferrer noopener" target="_blank" title="Olha's GitHub profile (opens in a new window)"><i class="fab fa-github" aria-hidden="true"></i></a>
       
       </div>
       <small>made by Olha Halat<br>
