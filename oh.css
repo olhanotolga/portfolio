@@ -1,0 +1,118 @@
+#plate {
+    width: 200px;
+    background-color: #272727;
+    margin: 20px auto 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.letter {
+    display: grid;
+    flex: 3 1 1;
+    grid-template-columns: repeat(6, 12px);
+    grid-template-rows: repeat(6, 12px);
+}
+
+/* LETTER O */
+#letter-o {
+    grid-template-areas:
+        "one two two two two eight"
+        "one three five five five eight"
+        "one three . . seven eight"
+        "one three . . seven eight"
+        "one six six six seven eight"
+        "one four four four four eight"
+    ;
+}
+.one-o {
+    background-color: #99C6EE;
+    grid-area: one;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* grid-row: 1 / span 6; */
+}
+.two-o {
+    background-color: #78d7d0;
+    grid-area: two;
+}
+.three-o {
+    background-color: #FDBF4C;
+    grid-area: three;
+}
+.four-o {
+    background-color: #99c6ee;
+    grid-area: four;
+}
+.five-o {
+    background-color: #fdbf4c;
+    grid-area: five;
+}
+.six-o {
+    background-color: #FC8F8F;
+    grid-area: six;
+}
+.seven-o {
+    background-color: #FC8F8F;
+    grid-area: seven;
+}
+.eight-o {
+    background-color: #78D7D0;
+    grid-area: eight;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* LETTER H */
+#letter-h {
+    grid-template-areas:
+        "eleven twelve . . sixteen eighteen"
+        "eleven twelve . . sixteen eighteen"
+        "eleven fourteen fourteen fourteen sixteen eighteen"
+        "eleven fifteen thirteen thirteen thirteen eighteen"
+        "eleven fifteen . . seventeen eighteen"
+        "eleven fifteen . . seventeen eighteen"
+    ;
+}
+
+.one-h {
+    background-color: #99C6EE;
+    grid-area: eleven;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.two-h {
+    background-color: #FC8F8F;
+    grid-area: twelve;
+    border-top-right-radius: 5px;
+}
+.three-h {
+    background-color: #FC8F8F;
+    grid-area: thirteen;
+}
+.four-h {
+    background-color: #FDBF4C;
+    grid-area: fourteen;
+}
+.five-h {
+    background-color: #FDBF4C;
+    grid-area: fifteen;
+    border-bottom-right-radius: 5px;
+}
+.six-h {
+    background-color: #FDBF4C;
+    grid-area: sixteen;
+    border-top-left-radius: 5px;
+
+}
+.seven-h {
+    background-color: #FC8F8F;
+    grid-area: seventeen;
+    border-bottom-left-radius: 5px;
+}
+.eight-h {
+    background-color: #78D7D0;
+    grid-area: eighteen;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
