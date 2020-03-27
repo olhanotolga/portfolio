@@ -131,6 +131,7 @@ main {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	padding: 0 15px;
+	margin: auto 5px;
 }
 .panel-collapse {
 	background-color: #272727;
